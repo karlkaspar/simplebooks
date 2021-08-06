@@ -1,0 +1,34 @@
+/*
+THIS FILE CONTAINS ALL CUSTOM WRITTEN CSS
+*/
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: local("Roboto") url("Roboto-Light.ttf") format("truetype"),
+  local("Roboto") url("Roboto-Light.woff2") format("woff2"),
+  local("Roboto") url("Roboto-Light.woff") format("woff");
+  /* Including this custom font might not work, I am using xampp and reportedly it has problems using custom fonts
+  Fixing this might take too much time */
+}
+html * {
+  font-family: "Roboto", sans-serif;
+}
+#container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+
+#userAddForm {
+  max-width: 320px;
+  display: inline-block;
+}
